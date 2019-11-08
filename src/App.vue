@@ -7,6 +7,7 @@
       v-for="post in posts"
       v-bind:key="post.id"
       v-bind:post="post"
+      v-on:enlarge-text="postFontSize += 0.1"
     ></blog-post>
   </div>
   </div>
@@ -28,7 +29,7 @@ export default {
         { id: 2, title: 'Blogging with Vue', content: 'b' },
         { id: 3, title: 'Why Vue is so fun', content: 'c' }
       ],
-      postFontSize: 1,
+      postFontSize: 2,
       }
   }
 }
